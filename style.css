@@ -1,0 +1,29 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+
+        }
+
+        header {
+            text-align: center;
+            background-color: rgb(37, 64, 83);
+            color: white;
+            padding:20px;
+        }
+        
+        nav{
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a{
+            gap: 20px;
+            text-decoration: none;
+            padding: 8px 12px;
+            color: white;
+        }
+
+        nav a:hover{
+            background-color: rgb(60, 106, 138);
+            border-radius: 5px;
+        }

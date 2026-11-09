@@ -4,27 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portafolio de Miguel Ángel Montoya: proyectos de desarrollo web, software y ciencia de datos.">
+    <title>Portafolio | Miguel Ángel Montoya</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header id="inicio">
+    <header class="site-header" id="inicio">
         <h1>PORTAFOLIO</h1>
         <h2>Miguel Ángel Montoya</h2>
-        <h3>Desarrollador de software - Ingeniero en Ciencia de Datos</h3>
+        <p>Desarrollador de software · Estudiante de Ingeniería en Ciencia de Datos</p>
 
-        <nav>
+        <nav class="site-nav" aria-label="Navegación principal">
             <a href="#inicio">Inicio</a>
             <a href="#experiencia">Experiencia</a>
             <a href="#proyectos">Proyectos</a>
-            <a href="">Habilidades</a>
-            <a href="">Contacto</a>
+            <a href="proyectos-riwi.html">Proyecto Riwi</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
     <main>
-        <p>
+        <p class="intro">
             Estudiante de Ingeniería en Ciencia de Datos con una sólida
             formación en desarrollo backend, Java, Python, SQL y análisis
             de datos. Con experiencia en la creación de aplicaciones
@@ -34,9 +36,9 @@
         </p>
 
         <section id="experiencia">
-            <h4>Experiencia simulada</h4>
-            <article>
-                <h5>Cargo: Coordinador de eventos</h5>
+            <h2>Experiencia simulada</h2>
+            <article class="experience-card">
+                <h3>Coordinador de eventos</h3>
 
                 <p><strong>Empresa:</strong> Innovatech Solutions</p>
 
@@ -59,10 +61,11 @@
 
         <section id="proyectos">
             <h2>Mis proyectos</h2>
-            <article id="conferencistas">
+            <div class="project-grid">
+            <article class="project-card" id="conferencistas">
                 <h3>Sección de conferencistas</h3>
-                <img id="img_proyecto" src="img/captura_seccion_conferencistas.jpeg"
-                    alt="Captura de la página web de conferencistas" width="500px">
+                <img src="../img/captura_seccion_conferencistas.jpeg"
+                    alt="Vista previa de la página de conferencistas" loading="lazy">
                 <p>
                     Página web que presenta conferencistas mediante tarjetas
                     con información individual y enlaces para consultar más
@@ -70,13 +73,15 @@
                     los elementos visuales, aplicar estilos y mejorar la
                     distribución del contenido.
                 </p>
-                <a href="https://miguel-07-2007.github.io/conferencistas/">Página de conferencistas</a>
-                <a href="https://github.com/Miguel-07-2007/conferencistas.git">repositorio</a>
+                <div class="project-links">
+                    <a href="https://miguel-07-2007.github.io/conferencistas/">Ver proyecto</a>
+                    <a href="https://github.com/Miguel-07-2007/conferencistas">Código fuente</a>
+                </div>
             </article>
-            <article id="hoja_de_vida">
+            <article class="project-card" id="hoja_de_vida">
                 <h3>Hoja de vida</h3>
-                <img id="img_proyecto" src="img/captura-hv.png"
-                    alt="Captura de la página web de hoja de vida" width="500px">
+                <img src="../img/captura-hv.png"
+                    alt="Vista previa de la página de hoja de vida" loading="lazy">
                 <p>
                     Página web personal desarrollada con HTML para presentar
                     información personal, formación académica y perfil
@@ -84,15 +89,35 @@
                     de contenido y etiquetas HTML para construir una
                     presentación clara y fácil de consultar.
                 </p>
-                <a href="https://miguel-07-2007.github.io/hoja_de_vida/">Hoja de vida</a>
-                <a href="https://github.com/Miguel-07-2007/hoja_de_vida.git">Repositorio</a>
+                <div class="project-links">
+                    <a href="https://miguel-07-2007.github.io/hoja_de_vida/">Ver proyecto</a>
+                    <a href="https://github.com/Miguel-07-2007/hoja_de_vida">Código fuente</a>
+                </div>
             </article>
+            </div>
+        </section>
 
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class="skill-list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Conoce más de mi trabajo en GitHub.</p>
+            <a class="button-link" href="https://github.com/Miguel-07-2007">Visitar GitHub</a>
         </section>
     </main>
-    <footer>
+    <footer class="site-footer">
         <p>
-            Miguel Angel Montoya - 2026
+            Miguel Ángel Montoya · 2026
         </p>
     </footer>
 
